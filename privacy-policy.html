@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>notrace – Polityka prywatności / Privacy Policy</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1a1a1a; --muted: #555; --line: #e3e3e3; --accent: #0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0d0d0d; --fg: #eaeaea; --muted: #a8a8a8; --line: #2a2a2a; --accent: #8ab4f8; } }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin: 0; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.25rem; margin-top: 2rem; border-top: 1px solid var(--line); padding-top: 1.5rem; }
+  h3 { font-size: 1.05rem; margin-top: 1.5rem; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); padding: 8px 6px; }
+  code { font-size: .88em; word-break: break-all; }
+  nav a { margin-right: 12px; }
+</style>
+</head>
+<body>
+<main>
+<h1>notrace</h1>
+<p class="muted">Aplikacja na Androida / Android app · <code>com.pepog.notrace</code><br>
+Obowiązuje od / Effective: 1 listopada 2026 / November 1, 2026</p>
+<nav><a href="#pl">Polski</a><a href="#en">English</a></nav>
+
+<section id="pl">
+<h2>Polityka prywatności (PL)</h2>
+
+<h3>W skrócie</h3>
+<p><strong>notrace nie zbiera, nie wysyła i nie udostępnia żadnych danych.</strong> Aplikacja nie ma uprawnienia do internetu (<code>android.permission.INTERNET</code>), więc technicznie nie może niczego przesłać poza telefon. Nie ma kont użytkowników, reklam, analityki, raportów błędów ani żadnych bibliotek firm trzecich, które komunikują się z siecią. Subskrypcję notrace Premium obsługuje w całości Google Play.</p>
+
+<h3>Administrator i kontakt</h3>
+<p>Aplikację wydaje developer „pepog” (osoba prywatna). Kontakt w sprawach prywatności: <a href="mailto:pepog.apps@gmail.com">pepog.apps@gmail.com</a>.</p>
+
+<h3>Jakie dane przetwarza aplikacja</h3>
+<p>Aplikacja przetwarza wyłącznie pliki, które sam wskażesz (zdjęcia, filmy, pliki audio lub inne pliki), w celu usunięcia z nich metadanych, pokazania, jakie metadane zawierają, albo ich edycji (np. zmiana formatu, zmniejszenie, zamazanie fragmentu). Całe przetwarzanie odbywa się lokalnie na Twoim urządzeniu.</p>
+<ul>
+  <li><strong>Wyczyszczone kopie</strong> są zapisywane w prywatnym folderze aplikacji na telefonie. Inne aplikacje nie mają do nich dostępu, dopóki sam ich nie udostępnisz.</li>
+  <li><strong>Oryginały</strong> nie są zmieniane. Aplikacja może je usunąć tylko na Twoje polecenie i dopiero po potwierdzeniu w systemowym oknie Androida.</li>
+  <li><strong>Ustawienia</strong> (język, motyw, opcje czyszczenia) są przechowywane lokalnie.</li>
+  <li><strong>Kopia zapasowa jest wyłączona</strong> — dane aplikacji nie trafiają do kopii w chmurze Google ani nie są przenoszone na nowe urządzenie.</li>
+  <li>Jeśli włączysz opcję „Zapisuj czyste kopie w galerii telefonu”, wyczyszczone kopie są dodatkowo zapisywane w albumie „notrace” w galerii telefonu. Usługi kopii zapasowych zdjęć (np. Zdjęcia Google) mogą je wtedy synchronizować zgodnie z Twoimi ustawieniami tych usług — notrace nie ma na to wpływu.</li>
+  <li>Wykrywanie twarzy do zamazywania korzysta z wbudowanego, lokalnego mechanizmu Androida; żadne dane biometryczne nie są zapisywane ani wysyłane.</li>
+</ul>
+<p>Usunięcie aplikacji usuwa wszystkie jej dane z telefonu (w tym prywatną galerię). Możesz też usuwać pliki ręcznie w aplikacji.</p>
+
+<h3>Uprawnienia</h3>
+<table>
+  <tr><th>Uprawnienie</th><th>Do czego służy</th></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code></td><td>Pokazuje powiadomienie z postępem, gdy czyszczenie lub przetwarzanie trwa w tle. Możesz odmówić — aplikacja nadal działa.</td></tr>
+  <tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PROCESSING</code>, <code>FOREGROUND_SERVICE_DATA_SYNC</code></td><td>Pozwalają dokończyć czyszczenie lub konwersję długich filmów, gdy wyjdziesz z aplikacji. Usługa działa tylko w trakcie przetwarzania wybranych przez Ciebie plików i jest widoczna jako powiadomienie. Nie przesyła żadnych danych.</td></tr>
+  <tr><td><code>ACCESS_MEDIA_LOCATION</code></td><td>Tylko odczyt. Bez tej zgody Android ukrywa przed aplikacją współrzędne GPS zapisane w zdjęciach, więc ekran „Sprawdź” nie mógłby Ci ich pokazać. Lokalizacja jest tylko wyświetlana na ekranie; nie jest zapisywana ani wysyłana. Aplikacja nie ma dostępu do lokalizacji Twojego urządzenia.</td></tr>
+  <tr><td><code>WAKE_LOCK</code></td><td>Dodawane przez bibliotekę AndroidX Media3; zapobiega uśpieniu procesora w trakcie przetwarzania filmu.</td></tr>
+  <tr><td><code>com.android.vending.BILLING</code></td><td>Pozwala kupić subskrypcję notrace Premium przez Google Play i sprawdzić, czy jest aktywna. Komunikacja odbywa się tylko z aplikacją Sklep Play na telefonie.</td></tr>
+</table>
+
+<h3>Subskrypcja notrace Premium</h3>
+<p>Część funkcji (m.in. filmy, dźwięk, edycja metadanych) jest dostępna w płatnej subskrypcji. Zakup, płatność, okres próbny, odnowienia i anulowanie obsługuje wyłącznie <strong>Google Play</strong> na zasadach <a href="https://policies.google.com/privacy">Polityki prywatności Google</a> i <a href="https://play.google.com/about/play-terms/">Warunków korzystania z Google Play</a>. notrace nie widzi danych Twojej karty ani konta płatniczego.</p>
+<p>Aplikacja pyta jedynie Sklep Play na Twoim telefonie, czy subskrypcja jest aktywna, i zapisuje lokalnie tę jedną informację (tak/nie), żeby Premium działało też offline. Ta informacja nie jest nigdzie wysyłana. Jako wydawca widzę w Konsoli Google Play standardowe raporty sprzedaży, które Google udostępnia wszystkim twórcom (np. liczbę i kraj zamówień); nie łączę ich z plikami ani z niczym, co robisz w aplikacji. Subskrypcją zarządzasz i anulujesz ją w Google Play → Płatności i subskrypcje.</p>
+<p>Aplikacja <strong>nie</strong> prosi o dostęp do całej galerii ani pamięci — pliki wybierasz w systemowym oknie wyboru i aplikacja dostaje dostęp tylko do nich. Nie korzysta z aparatu, mikrofonu, kontaktów, SMS, połączeń ani lokalizacji urządzenia.</p>
+
+<h3>Udostępnianie danych</h3>
+<p>Nie sprzedajemy, nie udostępniamy i nie przekazujemy żadnych danych nikomu. Pliki opuszczają aplikację tylko wtedy, gdy sam je udostępnisz innej aplikacji (np. komunikatorowi) — wtedy obowiązuje polityka prywatności tamtej aplikacji.</p>
+
+<h3>Dzieci</h3>
+<p>Aplikacja nie jest skierowana do dzieci i nie zbiera danych od nikogo, w tym od dzieci.</p>
+
+<h3>Zmiany</h3>
+<p>Jeśli polityka się zmieni, nowa wersja pojawi się pod tym adresem ze zaktualizowaną datą.</p>
+</section>
+
+<section id="en">
+<h2>Privacy Policy (EN)</h2>
+
+<h3>Summary</h3>
+<p><strong>notrace does not collect, transmit or share any data.</strong> The app has no internet permission (<code>android.permission.INTERNET</code>), so it technically cannot send anything off your phone. There are no user accounts, ads, analytics, crash reporting, or third-party libraries that talk to a network. The notrace Premium subscription is handled entirely by Google Play.</p>
+
+<h3>Developer and contact</h3>
+<p>The app is published by the developer "pepog" (an individual). Privacy contact: <a href="mailto:pepog.apps@gmail.com">pepog.apps@gmail.com</a>.</p>
+
+<h3>What data the app processes</h3>
+<p>The app only processes files you choose (photos, videos, audio or other files) to remove their metadata, show what metadata they contain, or edit them (e.g. change format, shrink, redact an area). All processing happens locally on your device.</p>
+<ul>
+  <li><strong>Cleaned copies</strong> are stored in the app's private folder on your phone. Other apps cannot access them unless you share them.</li>
+  <li><strong>Originals</strong> are never modified. The app deletes them only when you ask and only after you confirm in Android's system dialog.</li>
+  <li><strong>Settings</strong> (language, theme, cleaning options) are stored locally.</li>
+  <li><strong>Backup is disabled</strong> — app data is not included in Google cloud backups or device-to-device transfers.</li>
+  <li>If you turn on "Save clean copies to phone gallery", cleaned copies are also saved to a "notrace" album in your phone gallery. Photo backup services (e.g. Google Photos) may then sync them according to your settings in those services; notrace has no control over that.</li>
+  <li>Face detection for redaction uses Android's built-in, on-device detector; no biometric data is stored or sent.</li>
+</ul>
+<p>Uninstalling the app deletes all of its data from your phone (including its private gallery). You can also delete files manually in the app.</p>
+
+<h3>Permissions</h3>
+<table>
+  <tr><th>Permission</th><th>Purpose</th></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code></td><td>Shows a progress notification while cleaning or processing runs in the background. You can deny it and the app still works.</td></tr>
+  <tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PROCESSING</code>, <code>FOREGROUND_SERVICE_DATA_SYNC</code></td><td>Let cleaning or conversion of long videos finish after you leave the app. The service runs only while processing files you selected and is shown as a notification. It does not transmit any data.</td></tr>
+  <tr><td><code>ACCESS_MEDIA_LOCATION</code></td><td>Read-only. Without it Android hides the GPS coordinates stored in photos from the app, so the Inspect screen could not show them to you. The location is only displayed on screen; it is not stored or sent. The app has no access to your device's location.</td></tr>
+  <tr><td><code>WAKE_LOCK</code></td><td>Added by the AndroidX Media3 library; keeps the CPU awake while a video is being processed.</td></tr>
+  <tr><td><code>com.android.vending.BILLING</code></td><td>Lets you buy the notrace Premium subscription through Google Play and check whether it is active. It only talks to the Play Store app on your phone.</td></tr>
+</table>
+
+<h3>notrace Premium subscription</h3>
+<p>Some features (including videos, audio and metadata editing) are part of a paid subscription. Purchase, payment, free trial, renewals and cancellation are handled only by <strong>Google Play</strong>, under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the <a href="https://play.google.com/about/play-terms/">Google Play Terms of Service</a>. notrace never sees your card or payment account details.</p>
+<p>The app only asks the Play Store app on your phone whether the subscription is active and stores that single fact (yes/no) locally so Premium also works offline. It is never sent anywhere. As the publisher I see the standard sales reports Google Play Console gives every developer (e.g. number and country of orders); I do not link them to your files or to anything you do in the app. You manage and cancel the subscription in Google Play → Payments &amp; subscriptions.</p>
+<p>The app does <strong>not</strong> request access to your whole gallery or storage — you pick files in the system picker and the app only gets access to those. It does not use the camera, microphone, contacts, SMS, calls or device location.</p>
+
+<h3>Data sharing</h3>
+<p>We do not sell, share or transfer any data to anyone. Files leave the app only when you share them with another app (e.g. a messenger); that app's privacy policy then applies.</p>
+
+<h3>Children</h3>
+<p>The app is not directed at children and does not collect data from anyone, including children.</p>
+
+<h3>Changes</h3>
+<p>If this policy changes, the new version will be published at this address with an updated date.</p>
+</section>
+</main>
+</body>
+</html>
